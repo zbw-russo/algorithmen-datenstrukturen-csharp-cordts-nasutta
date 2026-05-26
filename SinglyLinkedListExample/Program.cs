@@ -19,5 +19,21 @@ internal static class Program
         Console.WriteLine($"Remove BB: {list.Remove("BB")}");
         Console.WriteLine($"Contains BB: {list.Contains("BB")}");
         Console.WriteLine($"Count: {list.Count}");
+
+        var stack = new Stack();
+
+        stack.Push("A");
+        stack.Push("B");
+        stack.Push("C");
+
+        Console.WriteLine();
+        Console.WriteLine($"Stack count: {stack.Count}");
+        Console.WriteLine($"Stack peek: {stack.Peek()}");
+        Console.WriteLine($"Stack pop: {stack.Pop()}");
+        Console.WriteLine($"Stack pop: {stack.Pop()}");
+        Console.WriteLine($"Stack count: {stack.Count}");
+
+        stack.Clear();
+        Console.WriteLine($"Stack count after clear: {stack.Count}");
     }
 }

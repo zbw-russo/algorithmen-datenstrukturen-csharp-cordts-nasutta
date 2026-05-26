@@ -134,4 +134,10 @@ public sealed class SinglyLinkedList
         }
 
     }
+    public void Clear()
+    {
+        _head = null;
+        _tail = null;
+        _count = 0;
+    }
 }
